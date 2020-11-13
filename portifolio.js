@@ -12,4 +12,5 @@ function navSelect(event){
 }
 
 document.getElementById("myVideo").playbackRate = 0.5;
+console.log(document.getElementById('audio'));
 document.getElementById('audio').play();
