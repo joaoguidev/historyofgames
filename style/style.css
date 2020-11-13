@@ -158,6 +158,12 @@ header span {
     background-position: right;
     background-size: cover;
 }
+#photoCoreLoop{
+    background-image: url(../images/gameloopGoals.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 #photoActionChallange{
     background-image: url(../images/challangeimg.jpg);
     background-repeat: no-repeat;
@@ -213,6 +219,7 @@ header span {
     grid-area: mainIndex;
     display: grid;
     padding-bottom: 30px;
+    height: 100%;
     grid-template-columns: 1fr 2fr 1fr;
     /* grid-template-rows: 30vh 30vh; */
     grid-template-areas: 
@@ -228,6 +235,9 @@ header span {
     width: 100%;
 }
 
+.mainStructuralElements table td ul {
+    list-style-type: none;
+}
 
 .mainStructuralElements table td {
     border: 1px solid white;
@@ -258,6 +268,61 @@ header span {
     
   }
 
+  /* --------------------------Group------------------------------------------ */
+
+.mainGroup{
+    grid-area: mainIndex;
+    display: grid;
+    padding-bottom: 30px;
+    height: 100vh;
+    grid-template-columns: 1fr 2fr 1fr;
+    /* grid-template-rows: 30vh 30vh; */
+    grid-template-areas: 
+    ". table ."
+    ;
+}
+
+
+
+.mainGroup table {
+    grid-area: table;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.mainGroup table td ul {
+    list-style-type: none;
+}
+
+.mainGroup table td {
+    border: 1px solid white;
+    padding: 15px;
+    text-align: center;
+    line-height: 1.6em;
+    letter-spacing: 2px;
+    font-size: 1.4em;
+    /* line-height: 1.4em; */
+    color: white;
+    text-align: center;
+  }
+
+  .mainGroup .t01 tr:nth-child(even) {
+      background-color: rgba(255, 255, 255, 0.2);
+      
+    }
+    .mainGroup .t01 tr:nth-child(odd) {
+        background-color: rgba(0, 0, 0, 0);
+  }
+  .mainGroup .t01 th {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    letter-spacing: 3px;
+    padding: 20px;
+    
+  }
+
 /* -------------------------------Projects----------------------------------------- */
 .mainProjects{
     grid-area: mainIndex;
@@ -268,9 +333,9 @@ header span {
     grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
     /* grid-template-rows: 30vh 30vh; */
     grid-template-areas: 
-    ". photoProject1 . photoProject2 ."
-    ". . photoProject3 . ."
-    ". photoProject4 . photoProject5 ."
+    ". photoProject1 photoProject2 photoProject3 ."
+    ". . photoProject4 . ."
+    ". photoProject5 . photoProject6 ."
     ;
 }
 .photoProject1{
@@ -283,7 +348,7 @@ header span {
 }
 .photoProject2{
     grid-area:photoProject2; 
-    background-image: url(../images/challangeimg.jpg); 
+    background-image: url(../images/gameloopGoals.jpg); 
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -291,7 +356,7 @@ header span {
 }
 .photoProject3{
     grid-area:photoProject3; 
-    background-image: url(../images/emergenceimg.jpg); 
+    background-image: url(../images/challangeimg.jpg); 
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -299,7 +364,7 @@ header span {
 }
 .photoProject4{
     grid-area:photoProject4; 
-    background-image: url(../images/flowimg.jpg); 
+    background-image: url(../images/emergenceimg.jpg); 
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -307,6 +372,14 @@ header span {
 }
 .photoProject5{
     grid-area:photoProject5; 
+    background-image: url(../images/flowimg.jpg); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-decoration: none;
+}
+.photoProject6{
+    grid-area:photoProject6; 
     background-image: url(../images/combat.jpg); 
     background-repeat: no-repeat;
     background-position: center;
@@ -326,6 +399,9 @@ header span {
     visibility: hidden;  
 }
 .photoProject5:hover p{
+    visibility: hidden;  
+}
+.photoProject6:hover p{
     visibility: hidden;  
 }
 .projectDescrip {
