@@ -513,6 +513,24 @@ header span {
         "mainIndex mainIndex mainIndex"
         ;
     }
+        /* -------------------------------Projects----------------------------------------- */
+.mainProjects{
+    grid-area: mainIndex;
+    display: grid;
+    margin-bottom: 30px;
+    grid-column-gap: 1.5em;
+    grid-row-gap:1.5em;
+    grid-template-columns: 1fr;
+    /* grid-template-rows: 30vh 30vh; */
+    grid-template-areas: 
+    " photoProject1 "
+    " photoProject2 "
+    " photoProject3 "
+    " photoProject4 "
+    " photoProject5 "
+    " photoProject6 "
+    ;
+}
     /* --------------------------About Me------------------------------------------ */
     .mainAboutMe{
         grid-template-rows: 40vh 30vh;
@@ -529,11 +547,7 @@ header span {
         font-size: 1.8rem;
         padding-top: 5vh;
     }
-    /* -------------------------------Projects----------------------------------------- */
-    .mainProjects{
-        grid-template-columns: 1fr 4fr 4fr 1fr;
-    }
-    
+
     /* -----------------------------Contact------------------------------- */
     
     .formContact fieldset legend{
@@ -542,6 +556,20 @@ header span {
     .formContact button{
         margin-top: 5vh;
         margin-left: 30%;
+    }
+    .mainStructuralElements{
+        grid-area: mainIndex;
+        display: grid;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-right: 10px;
+        padding-left: 10px;
+        height: 100%;
+        grid-template-columns: 1fr;
+        /* grid-template-rows: 30vh 30vh; */
+        grid-template-areas: 
+        " table "
+        ;
     }
 }
 @media only screen and (max-width:760px){
@@ -618,18 +646,42 @@ header span {
         padding-top: 50px;
         text-align: justify;
     }
+
     /* -------------------------------Projects----------------------------------------- */
-    .mainProjects{
-        grid-row-gap:5vw;
-        grid-template-columns: 1fr;
-        grid-template-rows: 50vh 50vh 50vh 50vh;
-        grid-template-areas: 
-        "photoProject2"
-        "photoProject1"
-        "photoProject3" 
-        "photoProject4"
-        ;
-    }
+.mainProjects{
+    grid-area: mainIndex;
+    display: grid;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    padding: 20px;
+    grid-column-gap: 1.5em;
+    grid-row-gap:1.5em;
+    grid-template-columns: 1fr;
+    /* grid-template-rows: 30vh 30vh; */
+    grid-template-areas: 
+    " photoProject1 "
+    " photoProject2 "
+    " photoProject3 "
+    " photoProject4 "
+    " photoProject5 "
+    " photoProject6 "
+    ;
+}
+.mainGroup{
+    grid-area: mainIndex;
+    display: grid;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 10px;
+    padding-left: 10px;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    /* grid-template-rows: 30vh 30vh; */
+    grid-template-areas: 
+    " table "
+    ;
+}
+
     
     .projectDescrip {
         height: 25vh;
@@ -638,6 +690,20 @@ header span {
         background-color: rgba(0,0,0, 0.6);
     }
     
+    .mainStructuralElements{
+        grid-area: mainIndex;
+        display: grid;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-right: 10px;
+        padding-left: 10px;
+        height: 100%;
+        grid-template-columns: 1fr;
+        /* grid-template-rows: 30vh 30vh; */
+        grid-template-areas: 
+        " table "
+        ;
+    }
     /* -----------------------------Contact------------------------------- */
     
     .mainContacts{
